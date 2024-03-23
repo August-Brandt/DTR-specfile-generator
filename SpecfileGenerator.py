@@ -1,7 +1,7 @@
 import random
 import string
 
-lines = 1000
+lines = 1000 # <- Set the number of lines here
 header = "name,ring,quadrant,isNew,moved,description"
 with open("specfile.csv", "w") as file:
     file.write(header + "\n")
@@ -21,4 +21,6 @@ with open("specfile.csv", "w") as file:
         for _ in range(random.randint(20,150)):
             desc += random.choice(string.ascii_letters)
         values.append(desc)
+        
+        # Write line to file
         file.write(",".join(values) + "\n")

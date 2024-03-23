@@ -1,0 +1,2 @@
+# DTR-Specfile-Generator
+This repo is for generating random specfiles that can be used by the [decentralized-tech-radar_dev](https://github.com/Agile-Arch-Angels/decentralized-tech-radar_dev) project for testing as well as testing feting specfiles from GitHub repos.

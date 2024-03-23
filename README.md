@@ -1,1 +1,0 @@
-# DTR-specfile-generator

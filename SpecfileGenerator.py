@@ -1,7 +1,7 @@
 import random
 import string
 
-lines = 1000 # <- Set the number of lines here
+lines = 10000 # <- Set the number of lines here
 header = "name,ring,quadrant,isNew,moved,description"
 with open("specfile.csv", "w") as file:
     file.write(header + "\n")

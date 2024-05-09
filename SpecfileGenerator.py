@@ -1,7 +1,7 @@
 import random
 import string
 
-lines = 10000 # <- Set the number of lines here
+lines = 1000 # <- Set the number of lines here
 header = "name,ring,quadrant,isNew,moved,description"
 with open("specfile.csv", "w") as file:
     file.write(header + "\n")
@@ -13,8 +13,8 @@ with open("specfile.csv", "w") as file:
         for _ in range(random.randint(2,15)):
             name += random.choice(string.ascii_letters)
         values.append(name)
-        values.append(random.choice(["Hold", "Assess", "Trial", "Adopt"]))
-        values.append(random.choice(["data management", "datastore", "infrastructure", "language"]))
+        values.append(random.choice(["hold", "assess", "trial", "adopt"]))
+        values.append(random.choice(["techniques", "platforms", "tools", "languages & frameworks"]))
         values.append(random.choice(["true", "false"]))
         values.append(str(random.randint(-3,3)))
         desc = ""
